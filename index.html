@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Shoonyapurna is an AI OS platform enabling enterprise intelligence, media intelligence, automation, and custom AI applications. Deploy HRMS, legal intelligence, multilingual translation, and AI agents tailored to your organization.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shoonyapurna",
+  "url": "https://shoonyapurna.com",
+  "description": "AI OS platform for enterprise intelligence, automation, and custom AI applications",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Greater Noida",
+    "addressCountry": "India"
+  }
+}
+</script>
+<meta name="author" content="Shoonyapurna">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="AI OS platform, enterprise intelligence software, media intelligence AI, HRMS automation India, legal intelligence platform, AI enterprise applications, multilingual AI translator, AI agents platform, enterprise automation India">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://shoonyapurna.com">
+<meta property="og:title" content="Shoonyapurna – AI OS for Enterprise Intelligence">
+<meta property="og:description" content="Deploy AI-powered enterprise applications: HRMS, legal intelligence, media intelligence, multilingual AI, and automation tools.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shoonyapurna.com">
+<meta property="og:image" content="https://shoonyapurna.com/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shoonyapurna – AI OS Platform">
+<meta name="twitter:description" content="Enterprise AI OS for intelligence, automation, and custom applications.">
+<title>Shoonyapurna | AI OS Platform for Enterprise Intelligence, Automation & Custom Applications</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --paper: #f5f0e8;
+    --gold: #c8a96e;
+    --gold-light: #e8d5a3;
+    --accent: #1a3a5c;
+    --accent2: #8b2635;
+    --muted: #8a7d6a;
+    --radius: 2px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+    cursor: crosshair;
+  }
+
+  /* ─── COMING SOON BANNER ─────────────────────── */
+  .coming-banner {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-family: 'Space Mono', monospace;
+    background: rgba(200,169,110,0.1);
+    color: var(--gold-light);
+    z-index: 98;
+    border-bottom: 1px solid rgba(200,169,110,0.25);
+    backdrop-filter: blur(4px);
+  }
+
+  @media (max-width: 768px) {
+    .coming-banner {
+      font-size: 8px;
+      letter-spacing: 1px;
+      padding: 8px 12px;
+      top: 56px;
+      line-height: 1.6;
+    }
+  }
+
+  /* ─── HERO ─────────────────────────────────── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: radial-gradient(ellipse at 50% 60%, #1a2a3a 0%, #0a0a0a 70%);
+    overflow: hidden;
+    padding-top: 120px;
+  }
+
+  #hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ─── LOGO ZERO ─────────────────────────────── */
+  .logo-wrap {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .zero-core {
+    font-family: 'Syne', sans-serif;
+    font-size: 160px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--gold);
+    letter-spacing: -8px;
+    line-height: 1;
+    position: relative;
+    z-index: 3;
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { text-shadow: 0 0 40px rgba(200,169,110,0.2), 0 0 80px rgba(200,169,110,0.05); }
+    50% { text-shadow: 0 0 80px rgba(200,169,110,0.5), 0 0 160px rgba(200,169,110,0.15); }
+  }
+
+  .orbit {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(200,169,110,0.18);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .orbit-1 { width: 260px; height: 260px; animation: spin 18s linear infinite; }
+  .orbit-2 { width: 330px; height: 330px; animation: spin 28s linear infinite reverse; border-style: dashed; }
+  .orbit-3 { width: 400px; height: 400px; animation: spin 40s linear infinite; border-color: rgba(200,169,110,0.08); }
+
+  @keyframes spin { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+  .service-dot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    animation: inherit;
+    animation-direction: reverse;
+  }
+
+  .service-dot span {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Space Mono', monospace;
+    font-size: 7px;
+    letter-spacing: 1.5px;
+    color: var(--gold);
+    white-space: nowrap;
+    opacity: 0.75;
+    text-transform: uppercase;
+  }
+
+  .orbit-1::after, .orbit-2::after {
+    content: '';
+    position: absolute;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    top: -3px; left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px var(--gold);
+  }
+
+  .tagline {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.8;
+    margin-top: 48px;
+    z-index: 2;
+    animation: fadeUp 1.2s ease 0.4s both;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--paper);
+    text-align: center;
+    margin-top: 16px;
+    z-index: 2;
+    animation: fadeUp 1.2s ease 0.6s both;
+    line-height: 1.2;
+  }
+
+  .hero-title em { font-style: italic; color: var(--gold-light); }
+
+  .hero-sub {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: rgba(245,240,232,0.7);
+    text-align: center;
+    margin-top: 12px;
+    z-index: 2;
+    animation: fadeUp 1.2s ease 0.8s both;
+    text-transform: uppercase;
+  }
+
+  .hero-access-note {
+    margin-top: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    z-index: 2;
+    animation: fadeUp 1.2s ease 0.9s both;
+    text-align: center;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-cta {
+    display: flex; gap: 16px; margin-top: 40px; z-index: 2;
+    animation: fadeUp 1.2s ease 1s both;
+    flex-wrap: wrap; justify-content: center;
+  }
+
+  .btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border: 1px solid var(--gold);
+    background: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn:hover { background: var(--gold); color: var(--ink); }
+  .btn.filled { background: var(--gold); color: var(--ink); }
+  .btn.filled:hover { background: transparent; color: var(--gold); }
+
+  .scroll-hint {
+    position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 2px;
+    color: var(--muted); text-transform: uppercase; z-index: 2;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  .scroll-hint::after {
+    content: '';
+    display: block; width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+  }
+
+  @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+  /* ─── NAV ─────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.95), rgba(10,10,10,0.7));
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(200,169,110,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: -1px;
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--paper); font-weight: 300; font-style: italic; font-family: 'Cormorant Garamond', serif; }
+
+  .nav-links {
+    display: flex; gap: 32px; list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 2px;
+    text-transform: uppercase; color: rgba(245,240,232,0.6); text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .ai-badge {
+    font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 1.5px;
+    padding: 6px 14px; border: 1px solid var(--accent);
+    background: rgba(26,58,92,0.4); color: #9dc5e8; text-transform: uppercase;
+    border-radius: var(--radius); cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .ai-badge:hover { background: rgba(26,58,92,0.7); }
+  .ai-badge::before { content: '⬡ '; }
+
+  /* ─── SECTIONS ─────────────────────────────── */
+  section {
+    padding: 100px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 4px;
+    text-transform: uppercase; color: var(--gold); opacity: 0.9;
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 16px;
+  }
+
+  .section-label::after {
+    content: ''; flex: 1; height: 1px; background: linear-gradient(to right, rgba(200,169,110,0.4), transparent);
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 32px;
+    color: var(--paper);
+  }
+
+  .section-title em { font-style: italic; color: var(--gold-light); }
+
+  /* ─── SERVICES GRID ─────────────────────────── */
+  #services { max-width: 100%; padding: 100px 48px; background: rgba(255,255,255,0.015); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1px;
+    background: rgba(200,169,110,0.12);
+    border: 1px solid rgba(200,169,110,0.12);
+    max-width: 1200px;
+    margin: 48px auto 0;
+  }
+
+  .service-card {
+    background: var(--ink);
+    padding: 40px 36px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(200,169,110,0.04), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .service-card:hover { background: #0f0f0f; }
+  .service-card:hover::before { opacity: 1; }
+
+  .service-icon {
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: block;
+    filter: grayscale(0.3);
+  }
+
+  .service-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+  }
+
+  .service-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(245,240,232,0.75);
+  }
+
+  .service-tag {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+  }
+
+  .free-tag {
+    background: rgba(139,38,53,0.2);
+    border: 1px solid rgba(139,38,53,0.4);
+    color: #e88a96;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 8px;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-left: 8px;
+    opacity: 1;
+  }
+
+  /* ─── FEATURES BAND ─────────────────────────── */
+  .features-band {
+    background: linear-gradient(135deg, rgba(26,58,92,0.15), rgba(139,38,53,0.08));
+    border-top: 1px solid rgba(200,169,110,0.1);
+    border-bottom: 1px solid rgba(200,169,110,0.1);
+    padding: 60px 48px;
+  }
+
+  .features-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; gap: 32px; flex-wrap: wrap; align-items: stretch;
+  }
+
+  .feature-pill {
+    flex: 1 1 220px;
+    padding: 32px;
+    border: 1px solid rgba(200,169,110,0.2);
+    background: rgba(10,10,10,0.5);
+    position: relative;
+  }
+
+  .feature-pill .pill-label {
+    font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+
+  .free-badge {
+    background: var(--accent2); color: #fff;
+    font-size: 7px; letter-spacing: 1px; padding: 3px 8px;
+    text-transform: uppercase; font-family: 'Space Mono', monospace;
+  }
+
+  .feature-pill h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400;
+    margin-bottom: 10px; color: var(--paper);
+  }
+
+  .feature-pill p {
+    font-size: 15px; line-height: 1.7; color: rgba(245,240,232,0.7);
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  /* ─── WAITLIST SECTION ──────────────────────── */
+  #waitlist {
+    background: linear-gradient(135deg, rgba(26,58,92,0.08), rgba(200,169,110,0.04));
+    border-top: 1px solid rgba(200,169,110,0.1);
+    padding: 80px 48px;
+  }
+
+  .waitlist-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .waitlist-inner .section-label {
+    justify-content: center;
+  }
+
+  .waitlist-inner .section-label::after { display: none; }
+
+  .waitlist-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.75);
+    margin-bottom: 12px;
+  }
+
+  .waitlist-note {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 48px;
+    line-height: 1.8;
+  }
+
+  .waitlist-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .wl-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .wl-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .wl-group label {
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.6);
+  }
+
+  .wl-group input,
+  .wl-group select,
+  .wl-group textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.2);
+    color: var(--paper);
+    padding: 12px 16px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+    -webkit-appearance: none;
+    width: 100%;
+  }
+
+  .wl-group select option { background: #111; color: var(--paper); }
+
+  .wl-group input:focus,
+  .wl-group select:focus,
+  .wl-group textarea:focus {
+    border-color: rgba(200,169,110,0.5);
+    background: rgba(255,255,255,0.06);
+  }
+
+  .wl-group input::placeholder,
+  .wl-group textarea::placeholder { color: rgba(245,240,232,0.3); }
+
+  .wl-group textarea { height: 100px; resize: vertical; }
+
+  .wl-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .wl-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    padding: 6px 14px;
+    border: 1px solid rgba(200,169,110,0.2);
+    color: rgba(245,240,232,0.55);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    user-select: none;
+    background: transparent;
+  }
+
+  .wl-tag.selected,
+  .wl-tag:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(200,169,110,0.07);
+  }
+
+  .wl-submit {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+
+  .wl-counter {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .wl-counter strong { color: var(--gold-light); }
+
+  /* Success state */
+  .wl-success {
+    display: none;
+    text-align: center;
+    padding: 48px 32px;
+    border: 1px solid rgba(200,169,110,0.2);
+    background: rgba(26,58,92,0.1);
+  }
+
+  .wl-success .success-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .wl-success h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+  }
+
+  .wl-success p {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    line-height: 1.9;
+  }
+
+  /* ─── AI ASSISTANT ──────────────────────────── */
+  #ai-chat-panel {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 380px; max-height: 560px;
+    background: #0d0d0d;
+    border: 1px solid rgba(200,169,110,0.25);
+    display: flex; flex-direction: column;
+    z-index: 200;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.7);
+    transform: translateY(120%) scale(0.95);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+
+  #ai-chat-panel.open {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .chat-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(200,169,110,0.12);
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .chat-header .avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 800; color: #fff;
+    flex-shrink: 0;
+  }
+
+  .chat-header-text h4 {
+    font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light);
+  }
+
+  .chat-header-text p {
+    font-family: 'Space Mono', monospace; font-size: 8px; color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  .chat-close {
+    margin-left: auto; background: none; border: none; color: var(--muted);
+    cursor: pointer; font-size: 18px; line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .chat-close:hover { color: var(--paper); }
+
+  .chat-messages {
+    flex: 1; overflow-y: auto; padding: 20px;
+    display: flex; flex-direction: column; gap: 12px;
+    scrollbar-width: thin; scrollbar-color: rgba(200,169,110,0.2) transparent;
+  }
+
+  .msg {
+    max-width: 85%; padding: 12px 16px; line-height: 1.6;
+    font-family: 'Cormorant Garamond', serif; font-size: 15px;
+    animation: msgIn 0.3s ease;
+  }
+
+  @keyframes msgIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+  .msg.ai {
+    background: rgba(26,58,92,0.3);
+    border: 1px solid rgba(26,58,92,0.5);
+    color: rgba(245,240,232,0.9);
+    align-self: flex-start;
+    border-radius: 0 8px 8px 8px;
+  }
+
+  .msg.user {
+    background: rgba(200,169,110,0.1);
+    border: 1px solid rgba(200,169,110,0.25);
+    color: var(--gold-light);
+    align-self: flex-end;
+    border-radius: 8px 0 8px 8px;
+  }
+
+  .msg-name {
+    font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 1px;
+    text-transform: uppercase; margin-bottom: 6px; opacity: 0.6;
+  }
+
+  .typing-indicator { display: flex; gap: 4px; padding: 6px 0; }
+  .typing-indicator span {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold); opacity: 0.5;
+    animation: typing 1.2s ease-in-out infinite;
+  }
+  .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes typing { 0%,100%{opacity:0.2;transform:translateY(0)} 50%{opacity:1;transform:translateY(-4px)} }
+
+  .chat-input-row {
+    padding: 16px; border-top: 1px solid rgba(200,169,110,0.1);
+    display: flex; gap: 8px;
+  }
+
+  #chat-input {
+    flex: 1; background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.15);
+    color: var(--paper); padding: 10px 14px;
+    font-family: 'Cormorant Garamond', serif; font-size: 14px;
+    outline: none; resize: none; height: 40px; line-height: 1.4;
+    transition: border-color 0.3s;
+  }
+
+  #chat-input:focus { border-color: rgba(200,169,110,0.4); }
+  #chat-input::placeholder { color: var(--muted); }
+
+  #send-btn {
+    background: var(--gold); border: none; color: var(--ink);
+    width: 40px; height: 40px; cursor: pointer;
+    font-size: 16px; display: flex; align-items: center; justify-content: center;
+    transition: background 0.3s; flex-shrink: 0;
+  }
+
+  #send-btn:hover { background: var(--gold-light); }
+
+  #ai-fab {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: linear-gradient(135deg, #1a3a5c, #2a5a8c);
+    border: 1px solid rgba(200,169,110,0.3);
+    color: var(--gold); font-size: 22px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 32px rgba(26,58,92,0.5);
+    z-index: 199; transition: all 0.3s;
+    font-family: 'Syne', sans-serif; font-weight: 800;
+  }
+
+  #ai-fab:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(26,58,92,0.7); }
+
+  /* ─── ABOUT ─────────────────────────────────── */
+  #about { max-width: 1200px; }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 48px;
+    align-items: start;
+  }
+
+  .about-text p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; line-height: 1.9;
+    color: rgba(245,240,232,0.8);
+    margin-bottom: 20px;
+  }
+
+  .about-text p strong { color: var(--gold-light); font-weight: 600; }
+
+  .ceo-card {
+    border: 1px solid rgba(200,169,110,0.2);
+    padding: 40px;
+    background: rgba(255,255,255,0.03);
+    position: relative;
+  }
+
+  .ceo-card::before {
+    content: '"';
+    position: absolute; top: -16px; left: 32px;
+    font-size: 80px; color: var(--gold); opacity: 0.15;
+    font-family: 'Cormorant Garamond', serif; line-height: 1;
+  }
+
+  .ceo-title {
+    font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 16px; opacity: 0.8;
+  }
+
+  .ceo-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300;
+    font-style: italic; color: var(--paper); margin-bottom: 8px;
+  }
+
+  .ceo-info {
+    font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 1px;
+    color: rgba(245,240,232,0.6); line-height: 2.2;
+  }
+
+  .ceo-info a { color: var(--gold); text-decoration: none; }
+  .ceo-info a:hover { text-decoration: underline; }
+
+  /* ─── CONTACT ───────────────────────────────── */
+  #contact {
+    background: rgba(255,255,255,0.015);
+    padding: 100px 48px;
+    border-top: 1px solid rgba(200,169,110,0.08);
+  }
+
+  .contact-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+  }
+
+  .contact-form {
+    display: flex; flex-direction: column; gap: 16px;
+    margin-top: 48px;
+  }
+
+  .early-note {
+    font-size: 14px;
+    color: rgba(245,240,232,0.65);
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    border-left: 2px solid rgba(200,169,110,0.3);
+    padding-left: 16px;
+  }
+
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+
+  .form-group label {
+    font-family: 'Space Mono', monospace; font-size: 8px;
+    letter-spacing: 2px; text-transform: uppercase; color: rgba(245,240,232,0.55);
+  }
+
+  .form-group input, .form-group textarea, .form-group select {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(200,169,110,0.18);
+    color: var(--paper);
+    padding: 12px 16px;
+    font-family: 'Cormorant Garamond', serif; font-size: 15px;
+    outline: none; transition: border-color 0.3s;
+    -webkit-appearance: none;
+  }
+
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(245,240,232,0.3); }
+  .form-group select option { background: #111; color: var(--paper); }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: rgba(200,169,110,0.45);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .form-group textarea { height: 120px; resize: vertical; }
+
+  .contact-info { margin-top: 48px; }
+
+  .info-item {
+    display: flex; align-items: flex-start; gap: 20px;
+    padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .info-item:last-child { border: none; }
+
+  .info-icon {
+    font-size: 20px; width: 32px; text-align: center; flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .info-label {
+    font-family: 'Space Mono', monospace; font-size: 8px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold); opacity: 0.75; margin-bottom: 6px;
+  }
+
+  .info-value {
+    font-family: 'Cormorant Garamond', serif; font-size: 17px;
+    color: rgba(245,240,232,0.85); line-height: 1.6;
+  }
+
+  .info-value a { color: inherit; text-decoration: none; }
+  .info-value a:hover { color: var(--gold-light); }
+
+  /* ─── FOOTER ─────────────────────────────────── */
+  footer {
+    padding: 40px 48px;
+    border-top: 1px solid rgba(200,169,110,0.08);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px;
+  }
+
+  .footer-logo {
+    font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 800;
+    color: var(--gold);
+  }
+
+  .footer-copy {
+    font-family: 'Space Mono', monospace; font-size: 8px;
+    letter-spacing: 1.5px; color: var(--muted); text-transform: uppercase;
+  }
+
+  .footer-domain {
+    font-family: 'Space Mono', monospace; font-size: 9px;
+    color: var(--gold); letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  /* ─── RESPONSIVE ────────────────────────────── */
+  @media (max-width: 768px) {
+    section { padding: 60px 20px; }
+    #services { padding: 60px 20px; }
+    #contact { padding: 60px 20px; }
+    #waitlist { padding: 60px 20px; }
+    .features-band { padding: 40px 20px; }
+
+    nav { padding: 14px 16px; }
+    .nav-logo { font-size: 18px; }
+    .nav-links { display: none; }
+    .ai-badge { font-size: 7px; padding: 5px 10px; }
+
+    .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+    .features-inner { flex-direction: column; }
+
+    footer { padding: 24px; flex-direction: column; align-items: flex-start; }
+
+    #hero { padding: 120px 16px 40px; }
+
+    .logo-wrap { width: 200px; height: 200px; }
+    .zero-core { font-size: 80px; -webkit-text-stroke: 1px var(--gold); }
+    .tagline { font-size: 9px; letter-spacing: 3px; margin-top: 24px; }
+    .hero-title { font-size: 26px; letter-spacing: 1px; margin-top: 10px; }
+    .hero-sub { font-size: 8px; letter-spacing: 2px; margin-top: 8px; }
+    .hero-cta { margin-top: 24px; gap: 10px; }
+    .btn { padding: 10px 18px; font-size: 9px; }
+
+    .orbit-2, .orbit-3 { display: none; }
+    .orbit-1 { width: 180px; height: 180px; }
+    .service-dot span { font-size: 6px; }
+
+    .services-grid { grid-template-columns: 1fr; }
+    .service-card { padding: 28px 22px; }
+    .service-desc { font-size: 15px; }
+
+    #ai-chat-panel { width: calc(100vw - 20px); right: 10px; bottom: 10px; max-height: 70vh; }
+    #ai-fab { width: 48px; height: 48px; font-size: 18px; }
+
+    .wl-row { grid-template-columns: 1fr; }
+    .wl-tags { gap: 6px; }
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0; transform: translateY(32px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">0<span>Shoonyapurna</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#features">Free Tools</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#waitlist">Join Waitlist</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="ai-badge" onclick="toggleChat()">In-House AI</button>
+</nav>
+
+<!-- COMING SOON BANNER -->
+<div class="coming-banner">
+  🚧 Platform Launching Soon — Limited Access &nbsp;·&nbsp; For Early Access &amp; Enterprise Queries Only
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="logo-wrap">
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+    <div class="orbit orbit-3"></div>
+
+    <div style="position:absolute;width:260px;height:260px;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin 18s linear infinite;">
+      <div class="service-dot" style="transform:rotate(0deg)"><span>Law</span></div>
+      <div class="service-dot" style="transform:rotate(60deg)"><span>Finance</span></div>
+      <div class="service-dot" style="transform:rotate(120deg)"><span>Media</span></div>
+      <div class="service-dot" style="transform:rotate(180deg)"><span>Ops</span></div>
+      <div class="service-dot" style="transform:rotate(240deg)"><span>Surveys</span></div>
+      <div class="service-dot" style="transform:rotate(300deg)"><span>Tech</span></div>
+    </div>
+
+    <div class="zero-core">0</div>
+  </div>
+
+  <p class="tagline">Shoonyapurna.com &nbsp;·&nbsp; Greater Noida, India</p>
+  <h1 class="hero-title">Zero. <em>Infinite</em> Possibilities.</h1>
+  <p class="hero-sub">Multidisciplinary Consulting &amp; In-House AI — All Under One Domain</p>
+  <p class="hero-access-note">Early Access Platform · Enterprise Deployments Opening Soon</p>
+
+  <div class="hero-cta">
+    <a href="#services" class="btn">Our Services</a>
+    <a href="#waitlist" class="btn filled">Request Early Access</a>
+  </div>
+
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- SERVICES -->
+<div id="services">
+  <section style="padding:0; max-width:1200px; margin:0 auto;">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Every domain. <em>One address.</em></h2>
+  </section>
+
+  <div class="services-grid reveal">
+
+    <div class="service-card">
+      <span class="service-icon">⚖️</span>
+      <div class="service-name">Legal Advisory</div>
+      <p class="service-desc">Corporate law, contract drafting, dispute resolution, compliance, and litigation support across jurisdictions.</p>
+      <span class="service-tag">Consulting</span>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">📡</span>
+      <div class="service-name">Media Intelligence</div>
+      <p class="service-desc">Media monitoring, narrative analysis, content strategy, press & broadcast intelligence, and digital reputation management.</p>
+      <span class="service-tag">Intelligence</span>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">⚙️</span>
+      <div class="service-name">Operational Management</div>
+      <p class="service-desc">Process optimisation, workflow design, supply chain consulting, and enterprise operations structuring.</p>
+      <span class="service-tag">Operations</span>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">💹</span>
+      <div class="service-name">Financial Services</div>
+      <p class="service-desc">Investment advisory, financial modelling, budgeting, audits, and startup funding strategy.</p>
+      <span class="service-tag">Finance</span>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">📊</span>
+      <div class="service-name">Survey & Research</div>
+      <p class="service-desc">Market research, data collection, field surveys, analytics reports, and qualitative studies.</p>
+      <span class="service-tag">Research</span>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🌐</span>
+      <div class="service-name">Computer Networking</div>
+      <p class="service-desc">Network architecture, cybersecurity, cloud infrastructure, IT support and system integration.</p>
+      <span class="service-tag">Infrastructure</span>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">💻</span>
+      <div class="service-name">Software Development</div>
+      <p class="service-desc">Bespoke software projects in all major languages — web, mobile, desktop, APIs and enterprise applications.</p>
+      <span class="service-tag">Engineering</span>
+    </div>
+
+    <div class="service-card" style="background: rgba(26,58,92,0.06);">
+      <span class="service-icon">🤖</span>
+      <div class="service-name">In-House AI <span class="free-tag">Powered</span></div>
+      <p class="service-desc">Our proprietary AI assistant embedded across every service — intelligent, domain-aware, always available.</p>
+      <span class="service-tag">Shoonyapurna AI</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- FREE FEATURES BAND -->
+<div id="features" class="features-band reveal">
+  <div class="features-inner">
+    <div class="feature-pill">
+      <div class="pill-label"><span class="free-badge">Free</span> OCR Service</div>
+      <h3>Document Text Extraction</h3>
+      <p>Upload any scanned document, image or PDF. Our OCR engine extracts text instantly — no account required.</p>
+    </div>
+
+    <div class="feature-pill">
+      <div class="pill-label"><span class="free-badge">Free</span> Language Translation</div>
+      <h3>Multilingual Translation</h3>
+      <p>Translate content across 100+ languages in seconds. Supports legal, technical and general documents.</p>
+    </div>
+
+    <div class="feature-pill">
+      <div class="pill-label"><span class="free-badge">Free</span> AI Consultation</div>
+      <h3>Ask Shoonyapurna AI</h3>
+      <p>Get instant answers on any of our service domains. Our in-house AI assistant is available 24/7 for all visitors.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">Who We Are</p>
+  <h2 class="section-title">Born from <em>zero</em>,<br>built for everything.</h2>
+
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p><strong>Shoonyapurna</strong> — meaning "complete zero" — is a multidisciplinary consulting and technology firm headquartered in Greater Noida, India. We believe zero is not emptiness; it is the origin of all possibility.</p>
+      <p>From navigating complex legal landscapes to architecting enterprise software, from conducting field surveys to delivering media intelligence for organisations — we bring <strong>deep domain expertise</strong> together under one unified platform.</p>
+      <p>Our in-house AI, built and trained on our proprietary methodologies, augments every engagement with intelligence, speed and precision. <strong>Free tools</strong> like OCR and language translation are available to every visitor — because access to capability should not be gated.</p>
+      <a href="#waitlist" class="btn" style="margin-top:16px;">Join the Waitlist</a>
+    </div>
+
+    <div>
+      <div class="ceo-card">
+        <p class="ceo-title">Chief Executive Officer</p>
+        <h3 class="ceo-name">Usha Singh</h3>
+        <div class="ceo-info">
+          <div>📍 Greater Noida, India</div>
+          <div>📧 <a href="mailto:shoonyapurna@shoonyapurna.com">shoonyapurna@shoonyapurna.com</a></div>
+          <div>📞 <a href="tel:+919433130278">+91 94331 30278</a></div>
+          <div>🌐 <a href="https://shoonyapurna.com" target="_blank">shoonyapurna.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST SECTION -->
+<div id="waitlist">
+  <div class="waitlist-inner">
+    <p class="section-label">Early Access</p>
+    <h2 class="section-title" style="text-align:center;">Join the <em>waitlist.</em></h2>
+    <p class="waitlist-desc">We are currently onboarding select clients and enterprise partners. Share your requirement and our team will reach out if it aligns with our current rollout phase.</p>
+    <p class="waitlist-note">We review each submission individually. Priority is given to organisations with clear use-cases across our core domains.</p>
+
+    <div id="wl-form-wrap">
+      <form class="waitlist-form reveal" id="waitlist-form" onsubmit="submitWaitlist(event)">
+
+        <div class="wl-row">
+          <div class="wl-group">
+            <label>Full Name *</label>
+            <input type="text" id="wl-name" placeholder="Your full name" required />
+          </div>
+          <div class="wl-group">
+            <label>Work Email *</label>
+            <input type="email" id="wl-email" placeholder="you@organisation.com" required />
+          </div>
+        </div>
+
+        <div class="wl-row">
+          <div class="wl-group">
+            <label>Organisation</label>
+            <input type="text" id="wl-org" placeholder="Company or institution name" />
+          </div>
+          <div class="wl-group">
+            <label>Organisation Size</label>
+            <select id="wl-size">
+              <option value="">Select size</option>
+              <option>Solo / Freelance</option>
+              <option>2–10 people</option>
+              <option>11–50 people</option>
+              <option>51–200 people</option>
+              <option>200+ people</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wl-group">
+          <label>Services of Interest (select all that apply)</label>
+          <div class="wl-tags" id="wl-tags">
+            <span class="wl-tag" onclick="toggleTag(this)">Legal Advisory</span>
+            <span class="wl-tag" onclick="toggleTag(this)">Media Intelligence</span>
+            <span class="wl-tag" onclick="toggleTag(this)">Operational Management</span>
+            <span class="wl-tag" onclick="toggleTag(this)">Financial Services</span>
+            <span class="wl-tag" onclick="toggleTag(this)">Survey & Research</span>
+            <span class="wl-tag" onclick="toggleTag(this)">Computer Networking</span>
+            <span class="wl-tag" onclick="toggleTag(this)">Software Development</span>
+            <span class="wl-tag" onclick="toggleTag(this)">AI Integration</span>
+          </div>
+        </div>
+
+        <div class="wl-group">
+          <label>Describe Your Use Case</label>
+          <textarea id="wl-usecase" placeholder="What problem are you looking to solve? The more specific, the better."></textarea>
+        </div>
+
+        <div class="wl-group">
+          <label>How soon do you need this?</label>
+          <select id="wl-timeline">
+            <option value="">Select timeline</option>
+            <option>Immediately / ASAP</option>
+            <option>Within 1 month</option>
+            <option>1–3 months</option>
+            <option>3–6 months</option>
+            <option>Just exploring</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn filled wl-submit">Submit Interest →</button>
+
+      </form>
+    </div>
+
+    <div class="wl-success" id="wl-success">
+      <div class="success-icon">✦</div>
+      <h3>Interest Received.</h3>
+      <p>
+        Thank you for joining the Shoonyapurna waitlist.<br>
+        Our team reviews each submission individually.<br><br>
+        We will reach out to you at your provided email<br>
+        if your use-case aligns with our current rollout phase.<br><br>
+        <strong style="color: var(--gold-light);">Expected review time: 3–7 business days.</strong>
+      </p>
+    </div>
+
+    <p class="wl-counter" id="wl-counter">
+      <strong id="wl-count">—</strong> organisations already on the waitlist
+    </p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="contact-inner">
+    <div>
+      <p class="section-label">Get In Touch</p>
+      <h2 class="section-title">Start the <em>conversation.</em></h2>
+      <div class="contact-info reveal">
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Office</div>
+            <div class="info-value">Greater Noida, Uttar Pradesh, India</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-value"><a href="mailto:shoonyapurna@shoonyapurna.com">shoonyapurna@shoonyapurna.com</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Phone</div>
+            <div class="info-value"><a href="tel:+919433130278">+91 94331 30278</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🌐</div>
+          <div>
+            <div class="info-label">Website</div>
+            <div class="info-value"><a href="https://shoonyapurna.com" target="_blank">shoonyapurna.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-label" style="margin-top:0">Direct Enquiry</p>
+      <p class="early-note">
+        We are currently onboarding select clients. Share your requirement and our team will reach out if it aligns with our current rollout phase.
+      </p>
+      <form class="contact-form reveal" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option value="">Select a service</option>
+            <option>Legal Advisory</option>
+            <option>Media Intelligence</option>
+            <option>Operational Management</option>
+            <option>Financial Services</option>
+            <option>Survey & Research</option>
+            <option>Computer Networking</option>
+            <option>Software Development</option>
+            <option>AI / Technology</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Describe your requirement…"></textarea>
+        </div>
+        <button type="submit" class="btn filled" style="align-self:flex-start; cursor:pointer;">Submit Interest →</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">0</div>
+  <div class="footer-copy">© 2026 Shoonyapurna. All rights reserved.</div>
+  <a href="https://shoonyapurna.com" class="footer-domain" target="_blank">shoonyapurna.com</a>
+</footer>
+
+<!-- AI FAB -->
+<button id="ai-fab" onclick="toggleChat()" title="Chat with Shoonyapurna AI">0</button>
+
+<!-- AI CHAT PANEL -->
+<div id="ai-chat-panel">
+  <div class="chat-header">
+    <div class="avatar">0</div>
+    <div class="chat-header-text">
+      <h4>Shoonyapurna AI</h4>
+      <p>In-House Intelligence · Limited Rollout</p>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">×</button>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="msg ai">
+      <div class="msg-name">Shoonyapurna AI</div>
+      Namaste! I'm the in-house AI for Shoonyapurna. We are currently in a limited rollout phase. I can help explain our platform, capabilities, and which of our services might suit your needs. How can I assist you today?
+    </div>
+  </div>
+  <div class="chat-input-row">
+    <textarea id="chat-input" placeholder="Ask anything…" onkeydown="handleKey(event)" rows="1"></textarea>
+    <button id="send-btn" onclick="sendMessage()">→</button>
+  </div>
+</div>
+
+<script>
+  // ─── SCROLL REVEAL ────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ─── WAITLIST TAG TOGGLE ──────────────────────
+  function toggleTag(el) {
+    el.classList.toggle('selected');
+  }
+
+  // ─── WAITLIST SUBMIT ─────────────────────────
+  // Simulated counter — replace with real backend count
+  let waitlistCount = 47;
+  document.getElementById('wl-count').textContent = waitlistCount;
+
+  function submitWaitlist(e) {
+    e.preventDefault();
+
+    const name    = document.getElementById('wl-name').value.trim();
+    const email   = document.getElementById('wl-email').value.trim();
+    const org     = document.getElementById('wl-org').value.trim();
+    const size    = document.getElementById('wl-size').value;
+    const usecase = document.getElementById('wl-usecase').value.trim();
+    const timeline= document.getElementById('wl-timeline').value;
+
+    const selectedTags = [...document.querySelectorAll('.wl-tag.selected')].map(t => t.textContent);
+
+    // Build submission object (connect to your backend/Airtable/Notion/Sheets here)
+    const submission = { name, email, org, size, services: selectedTags, usecase, timeline, timestamp: new Date().toISOString() };
+    console.log('Waitlist submission:', submission);
+
+    // Show success
+    document.getElementById('wl-form-wrap').style.display = 'none';
+    const success = document.getElementById('wl-success');
+    success.style.display = 'block';
+
+    // Increment counter
+    waitlistCount++;
+    document.getElementById('wl-count').textContent = waitlistCount;
+  }
+
+  // ─── CONTACT FORM ─────────────────────────────
+  function submitForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type=submit]');
+    btn.textContent = 'Interest Received ✓';
+    btn.style.background = '#2d6a4f';
+    btn.style.borderColor = '#2d6a4f';
+    setTimeout(() => {
+      btn.textContent = 'Submit Interest →';
+      btn.style.background = '';
+      btn.style.borderColor = '';
+      e.target.reset();
+    }, 3000);
+  }
+
+  // ─── AI CHAT ──────────────────────────────────
+  let chatOpen = false;
+
+  function toggleChat() {
+    chatOpen = !chatOpen;
+    const panel = document.getElementById('ai-chat-panel');
+    const fab   = document.getElementById('ai-fab');
+    panel.classList.toggle('open', chatOpen);
+    fab.style.opacity = chatOpen ? '0' : '1';
+    fab.style.pointerEvents = chatOpen ? 'none' : 'all';
+    if (chatOpen) document.getElementById('chat-input').focus();
+  }
+
+  function handleKey(e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+  }
+
+  const SYSTEM_PROMPT = `You are the official in-house AI assistant for Shoonyapurna (shoonyapurna.com), a multidisciplinary consulting and technology firm based in Greater Noida, India. CEO: Usha Singh (shoonyapurna@shoonyapurna.com, +919433130278).
+
+Services: Legal Advisory, Media Intelligence, Operational Management, Financial Services, Survey & Research, Computer Networking, Software Development (all languages).
+Free tools for visitors: OCR (document text extraction) and Language Translation.
+Status: The platform is currently in limited early access rollout. Visitors can join the waitlist at shoonyapurna.com.
+
+Your role: Answer questions about Shoonyapurna's services, help visitors understand which service suits their needs, provide general guidance in any of the service domains, and encourage them to join the waitlist or contact the team for detailed engagement. Be professional, warm, and concise. Always respond in the language the user writes in.`;
+
+  let conversationHistory = [];
+
+  async function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const text  = input.value.trim();
+    if (!text) return;
+
+    appendMsg('user', 'You', text);
+    input.value = '';
+
+    conversationHistory.push({ role: 'user', content: text });
+
+    const typingId = showTyping();
+
+    try {
+      const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1000,
+          system: SYSTEM_PROMPT,
+          messages: conversationHistory
+        })
+      });
+
+      const data = await response.json();
+      removeTyping(typingId);
+
+      const reply = data.content?.map(b => b.text || '').join('') || 'Sorry, I could not process your request right now.';
+      conversationHistory.push({ role: 'assistant', content: reply });
+      appendMsg('ai', 'Shoonyapurna AI', reply);
+    } catch (err) {
+      removeTyping(typingId);
+      appendMsg('ai', 'Shoonyapurna AI', 'I am having trouble connecting right now. Please email us at shoonyapurna@shoonyapurna.com or call +91 9433130278.');
+    }
+  }
+
+  function appendMsg(type, name, text) {
+    const container = document.getElementById('chat-messages');
+    const div = document.createElement('div');
+    div.className = `msg ${type}`;
+    div.innerHTML = `<div class="msg-name">${name}</div>${escapeHtml(text)}`;
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function showTyping() {
+    const container = document.getElementById('chat-messages');
+    const div = document.createElement('div');
+    const id  = 'typing-' + Date.now();
+    div.id = id;
+    div.className = 'msg ai';
+    div.innerHTML = '<div class="msg-name">Shoonyapurna AI</div><div class="typing-indicator"><span></span><span></span><span></span></div>';
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+    return id;
+  }
+
+  function removeTyping(id) {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  }
+
+  function escapeHtml(text) {
+    return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+  }
+</script>
+</body>
+</html>
