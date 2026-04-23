@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css"><title>Core Palette</title>
+<style>
+.card { padding: 28px; }
+.swatches { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+.sw { aspect-ratio: 1; border-radius: 2px; border: 1px solid rgba(200,169,110,0.1); position: relative; }
+.sw-label { margin-top: 10px; display: flex; flex-direction: column; gap: 2px; }
+.sw-name { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--paper); }
+.sw-hex { font-family: var(--font-mono); font-size: 9px; color: var(--muted); letter-spacing: 0.5px; }
+.sw-box { width: 100%; height: 84px; border: 1px solid rgba(200,169,110,0.12); border-radius: 2px; }
+</style></head><body>
+<div class="card">
+  <div class="eyebrow" style="margin-bottom: 18px;">Core Palette · six swatches, black-first</div>
+  <div class="swatches">
+    <div><div class="sw-box" style="background:#0a0a0a"></div><div class="sw-label"><div class="sw-name">Ink</div><div class="sw-hex">#0A0A0A</div></div></div>
+    <div><div class="sw-box" style="background:#f5f0e8"></div><div class="sw-label"><div class="sw-name">Paper</div><div class="sw-hex">#F5F0E8</div></div></div>
+    <div><div class="sw-box" style="background:#c8a96e"></div><div class="sw-label"><div class="sw-name">Gold</div><div class="sw-hex">#C8A96E</div></div></div>
+    <div><div class="sw-box" style="background:#e8d5a3"></div><div class="sw-label"><div class="sw-name">Gold Light</div><div class="sw-hex">#E8D5A3</div></div></div>
+    <div><div class="sw-box" style="background:#1a3a5c"></div><div class="sw-label"><div class="sw-name">Navy</div><div class="sw-hex">#1A3A5C</div></div></div>
+    <div><div class="sw-box" style="background:#8b2635"></div><div class="sw-label"><div class="sw-name">Burgundy</div><div class="sw-hex">#8B2635</div></div></div>
+  </div>
+</div>
+</body></html>

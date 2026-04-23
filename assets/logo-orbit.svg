@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="200" cy="200" r="200" fill="none" stroke="rgba(200,169,110,0.08)" stroke-width="1"></circle>
+  <circle cx="200" cy="200" r="165" fill="none" stroke="rgba(200,169,110,0.18)" stroke-width="1" stroke-dasharray="4 6"></circle>
+  <circle cx="200" cy="200" r="130" fill="none" stroke="rgba(200,169,110,0.18)" stroke-width="1"></circle>
+  
+  <circle cx="200" cy="35" r="3" fill="#c8a96e" filter="url(#glow)"></circle>
+  <circle cx="200" cy="70" r="3" fill="#c8a96e" filter="url(#glow)"></circle>
+  
+  <text x="200" y="258" class="zero-core" text-anchor="middle" filter="url(#glow)">0</text>
+</svg>
